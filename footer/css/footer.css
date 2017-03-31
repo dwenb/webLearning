@@ -1,0 +1,55 @@
+#allBack{
+    background-image: url(../image/backgroundImg/backgroundImg.jpg);
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+}
+
+#mainContainer{
+    /*display: flex;*/
+    /*flex-flow: column;*/
+    width:800px;
+    background-color: white;
+}
+
+#sliderDoor {
+    height: 280px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider{
+    flex:1;
+    color: #333;
+}
+
+#sliderDoor img {
+    position: absolute;
+    display: block;
+    left: 0;
+    border-left: 1px solid #cccccc;
+}
+
+#triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 500px solid yellow;
+    border-bottom: 100px solid white;
+    border-top: 100px solid black;
+}
+
+#boxContainer {
+    width:600px;
+    height:200px;
+    margin-left: 100px;
+    border:1px solid #ccc;
+    -moz-column-count:3; 	/* Firefox */
+    -webkit-column-count:3; /* Safari 和 Chrome */
+    column-count:3;
+    overflow: scroll;
+}
+
+
