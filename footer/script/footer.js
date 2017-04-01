@@ -1,5 +1,11 @@
 window.onload = function () {
     //容器对象
+    var mainContainer=document.getElementById("mainContainer");
+    // mainContainer.style.width = parseInt(screen.width)+"px";
+    // mainContainer.style.height = parseInt(screen.height) + "px";
+    mainContainer.style.left = (document.body.clientWidth - mainContainer.clientWidth)/2 +"px";
+
+    //容器对象
     var box = document.getElementById("sliderDoor");
 
     //获得图片nodeList集合
@@ -36,4 +42,10 @@ window.onload = function () {
             }
         })(i)
     }
+
+    //获取右上角user bar中会员元素
+    var getVip = document.getElementById("com_userbar");
+    console.log(getVip);
+    var getdiv = getVip.getElementsByTagName("a");
+    console.log(getdiv);
 };

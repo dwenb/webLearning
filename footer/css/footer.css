@@ -1,15 +1,137 @@
-#allBack{
-    background-image: url(../image/backgroundImg/backgroundImg.jpg);
-    display: flex;
-    flex-flow: column;
-    flex: 1;
+.userbar {
+    top: 2px;
+    position: absolute;
+    right: 10px;
 }
 
-#mainContainer{
+.userbar > ul > li {
+    float: left;
+    font-size: 13px;
+}
+
+.userbar > ul > li .u_ddl {
+    font-size: 12px;
+}
+
+.u_ddl {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 29px;
+}
+
+.u_ddl .i-dropdown-dou{
+    display: inline-block;
+    width: 16px;
+    height: 22px;
+    vertical-align: bottom;
+    margin-right: 4px;
+    background: url("http://tb2.bdstatic.com/tb/img/i-dropdown-dou_3d18c13.png") no-repeat 0 0;
+}
+
+.u_ddl .i-dropdown-tbmall{
+    display: inline-block;
+    width: 16px;
+    height: 22px;
+    vertical-align: bottom;
+    margin-right: 4px;
+    background: url("http://tb2.bdstatic.com/tb/img/i-dropdown-tbmall_2ca0e9e.png") no-repeat 0 0;
+}
+
+.u_ddl .i-dropdown-member{
+    display: inline-block;
+    width: 16px;
+    height: 22px;
+    vertical-align: bottom;
+    margin-right: 4px;
+    background: url("http://tb2.bdstatic.com/tb/img/i-dropdown-member_68c1f95.png") no-repeat 0 0;
+}
+
+.u_ddl_con {
+    border: solid 1px #d1d1d1;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #d1d1d1;
+}
+
+.u_ddl_con li a {
+    display: block;
+    line-height: 26px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.u_ddl_con_top li a {
+    padding: 0 11px;
+}
+
+.u_ddl_arrow {
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    left: 50%;
+    margin-left: -4px;
+    display: inline-block;
+    width: 0;
+    height:0;
+    line-height: 0;
+    border: 5px dashed transparent;
+    border-bottom: 5px solid #e3e3e3;
+    font-size: 0;
+}
+
+.u_split {
+    background: #ebebeb;
+    width: 1px;
+    height: 13px;
+    margin: 8px 13px 0;
+}
+
+.u_menu_item {
+    padding: 4px 11px 7px;
+}
+
+.u_menu_item a {
+    color: #333333;
+    text-decoration: underline;
+    font-family: Arial;
+
+}
+
+.u_menu_item .i-member {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 4px;
+    background: url("http://tb2.bdstatic.com/tb/img/i-member_162dd82.png") no-repeat 0 0;
+}
+
+.u_menu_item .i-arrow-down {
+    display: inline-block;
+    width: 7px;
+    height: 16px;
+    vertical-align: bottom;
+    margin-left: 3px;
+    background: url("http://tb2.bdstatic.com/tb/img/i-arrow-down_2c2c491.png") no-repeat 0 2px;
+}
+
+#allBack {
+    background-image: url(../image/backgroundImg/backgroundImg.jpg);
+    height: 900px;
+    /*width:1440px;*/
+    flex-flow: column;
+    resize: both;
+    overflow: auto;
+    margin-top: 60px;
+}
+
+#mainContainer {
     /*display: flex;*/
     /*flex-flow: column;*/
-    width:800px;
+    width: 921px;
     background-color: white;
+    position: relative;
 }
 
 #sliderDoor {
@@ -18,11 +140,11 @@
     border-bottom: 1px solid #ccc;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
+    position: absolute;
 }
 
-#slider{
-    flex:1;
+#slider {
+    flex: 1;
     color: #333;
 }
 
@@ -42,13 +164,13 @@
 }
 
 #boxContainer {
-    width:600px;
-    height:200px;
+    width: 600px;
+    height: 200px;
     margin-left: 100px;
-    border:1px solid #ccc;
-    -moz-column-count:3; 	/* Firefox */
-    -webkit-column-count:3; /* Safari 和 Chrome */
-    column-count:3;
+    border: 1px solid #ccc;
+    -moz-column-count: 3; /* Firefox */
+    -webkit-column-count: 3; /* Safari 和 Chrome */
+    column-count: 3;
     overflow: scroll;
 }
 
