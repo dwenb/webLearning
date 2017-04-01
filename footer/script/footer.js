@@ -46,7 +46,9 @@ window.onload = function () {
     var vipMemberBox = userBar.getElementsByTagName("li");
 
     //获取会员列表选项
-    var vipList = document.getElementById("vip_list");
+    var vipListMiddle = userBar.getElementsByTagName("div");   //49-50行等效 51行
+    var vipList = vipListMiddle[6];
+    // var vipList = document.getElementById("vip_list");   //百度贴吧无此id,便于计算自行添加
     var listbox = vipList.getElementsByTagName("li");
     vipMemberBox[5].onmouseover = function () {
         vipList.style.display = "block";
