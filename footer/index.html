@@ -8,71 +8,115 @@
     <script src="script/footer.js"></script>
 </head>
 <body>
-<div id="com_userbar" class="userbar">
-    <ul>
-        <li class="u_split"></li>
-        <li class="u_bdhome">
-            <div class="u_menu_item">
-                <a href="https://www.baidu.com" target="_blank">百度首页</a>
+<div id="head" class="search_bright clearfix">
+    <div class="head_inner">
+        <div class="search_top clearfix">
+            <div class="search_nav j_search_nav" style="margin-right: 349px">
+                <a param="wd" href="https://www.baidu.com/s?c1=3&">网页</a>
+                <a param="word" href="http://news.baidu.com/">新闻</a>
+                <b>贴吧</b>
+                <a param="word" href="https://zhidao.baidu.com/">知道</a>
+                <a param="key" href="https://zhidao.baidu.com/">音乐</a>
+                <a param="wor" href="http://image.baidu.com/">图片</a>
+                <a param="word" href="http://v.baidu.com/">视频</a>
+                <a param="word" href="http://map.baidu.com/">地图</a>
+                <a param="word" href="https://wenku.baidu.com/">文库</a>
             </div>
-        </li>
-        <li class="u_login">
-            <div class="u_menu_item">
-                <a href="https://www.baidu.com" target="_blank">登录</a>
+        </div>
+        <div class="search_main_wrap">
+            <div class="search_main clearfix">
+                <div class="search_form">
+                    <a title="到贴吧首页" href="/" class="search_logo" id="search_logo_large"></a>
+                    <a id="search_logo_small" class title="到贴吧首页" href="/"></a>
+                    <form name="f1" class="clearfix j_search_form" action="/f" id="tb_header_search_form">
+                        <input class="search_ipt search_inp_border j_search_input tb_header_search_input" name="kw1"
+                               autocomplete="off" size="42" tabindex="1" id="wd1" maxlength="100"
+                               x-webkit-grammar="builtin:search" x-webkit-speech="true">
+                        <input autocomplete="off" type="hidden" name="kw" value="永夜君王" id="wd2">
+                        <span class="search_btn_wrap search_btn_enter_ba_wrap">
+                            <a class="search_btn search_btn_enter_ba j_enter_ba" href="#" onclick="return false;"
+                               onmousedown="this.className+='search_btn_down" onmouseout="this.className=this.className.replace('rearch_btn_down','')">
+                                进入贴吧
+                            </a>
+                        </span>
+                        <span class="search_btn_wrap">
+                            <a class="search_btn j_search_post" href="#" onclick="return false;" onmousedown="this.className+='search_btn_down'"
+                               onmouseout="this.className=this.className.replace('search_btn_down','')">全吧搜索</a>
+                        </span>
+                        <a class="senior-search-link" href="http://tieba.baidu.com/f/search/adv">高级搜索</a>
+                        <div id="pagelet_search/pagelet/search_ad"></div>
+                    </form>
+                </div>
             </div>
-        </li>
-        <li class="u_reg">
-            <div class="u_menu_item">
-                <a href="https://www.baidu.com" target="_blank">注册</a>
-            </div>
-        </li>
-        <li class="u_hermes">
-            <div class="u_menu_item">
-                <a href="https://www.baidu.com" target="_blank">问题反馈</a>
-            </div>
-        </li>
-        <li class="u_member">
-            <div id="vip_mem_id" class="u_menu_item u_menu_member">
-                <a href="#" target="_blank" onclick="return false">
-                    <i class="i-member"></i>
-                    会员
-                    <i class="i-arrow-down"></i>
-                </a>
-            </div>
-            <div  class="u_ddl">
-                <div id="vip_list" class="u_ddl_con">
+        </div>
+    </div>
+    <div id="com_userbar" class="userbar">
+        <ul>
+            <li class="u_split"></li>
+            <li class="u_bdhome">
+                <div class="u_menu_item">
+                    <a href="https://www.baidu.com" target="_blank">百度首页</a>
+                </div>
+            </li>
+            <li class="u_login">
+                <div class="u_menu_item">
+                    <a href="https://www.baidu.com" target="_blank">登录</a>
+                </div>
+            </li>
+            <li class="u_reg">
+                <div class="u_menu_item">
+                    <a href="https://www.baidu.com" target="_blank">注册</a>
+                </div>
+            </li>
+            <li class="u_hermes">
+                <div class="u_menu_item">
+                    <a href="https://www.baidu.com" target="_blank">问题反馈</a>
+                </div>
+            </li>
+            <li class="u_member">
+                <div id="vip_mem_id" class="u_menu_item u_menu_member">
+                    <a href="#" target="_blank" onclick="return false">
+                        <i class="i-member"></i>
+                        会员
+                        <i class="i-arrow-down"></i>
+                    </a>
+                </div>
+                <div  class="u_ddl">
+                    <div id="vip_list" class="u_ddl_con">
                     <span class="u_ddl_arrow">
                          <em></em>
                     </span>
-                   <div class="u_ddl_con_top">
-                       <ul>
-                           <li>
-                               <a class="dropdown-dou" herf="#" onclick="return false">
-                                   <i class="i-dropdown-dou">
-                                   </i>
-                                   T豆钱包
-                               </a>
-                           </li>
-                           <li>
-                               <a class="dropdown-tbmall" herf="#" onclick="return false">
-                                   <i class="i-dropdown-tbmall">
-                                   </i>
-                                   T豆商城
-                               </a>
-                           </li>
-                           <li>
-                               <a class="vip-home" herf="#" onclick="return false">
-                                   <i class="i-dropdown-member">
-                                   </i>
-                                   会员官网
-                               </a>
-                           </li>
-                       </ul>
-                   </div>
+                        <div class="u_ddl_con_top">
+                            <ul>
+                                <li>
+                                    <a class="dropdown-dou" herf="#" onclick="return false">
+                                        <i class="i-dropdown-dou">
+                                        </i>
+                                        T豆钱包
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-tbmall" herf="#" onclick="return false">
+                                        <i class="i-dropdown-tbmall">
+                                        </i>
+                                        T豆商城
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="vip-home" herf="#" onclick="return false">
+                                        <i class="i-dropdown-member">
+                                        </i>
+                                        会员官网
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </li>
-    </ul>
+            </li>
+        </ul>
+    </div>
+
 </div>
 <div id="allBack">
     <div id="mainContainer">
@@ -111,5 +155,25 @@
         </div>
     </div>
 </div>
+<style type="text/css">
+    #container {
+        height: 200px;
+        display: flex;
+        /*flex-direction: row;*/  //默认row  react native 默认为column
+    }
+    #left{
+        flex: 1;
+        background-color: yellow;
+    }
+    #right{
+        flex: 1;
+        background-color: #3388ff;
+    }
+</style>
+<div id="container">
+    <div id="left"></div>
+    <div id="right"></div>
+</div>
+
 </body>
 </html>

@@ -1,3 +1,4 @@
+/*user bar*/
 .userbar {
     top: 2px;
     position: absolute;
@@ -95,7 +96,7 @@
 }
 
 .u_menu_item {
-    padding: 4px 11px 7px;
+    padding: 8px 11px 7px;
 }
 
 .u_menu_item a {
@@ -123,6 +124,164 @@
     background: url("http://tb2.bdstatic.com/tb/img/i-arrow-down_2c2c491.png") no-repeat 0 2px;
 }
 
+/*百度网页新闻等*/
+.search_top {
+    margin-bottom: 32px;
+    border-bottom: 1px solid #ebebeb;
+    height: 32px;
+    overflow: hidden;
+}
+
+.search_bright{
+    margin: 0 auto;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+:before, :after{
+    box-sizing: content-box;
+}
+
+.search_nav{
+    float: right;
+    height: 32px;
+    font-size: 13px;
+    text-align: center;
+    padding-right: 40px;
+    /*font-weight: 700;*/
+}
+
+.search_nav a:visited {
+    font-family: Arial, SimSun;
+    color: #333333;
+    text-decoration: underline;
+}
+
+.search_nav a, .search_nav b{
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 22px;
+    line-height: 34px;
+}
+
+/*百度搜索行*/
+#head{
+    background: #ffffff;
+    height: 135px;
+}
+
+.head_inner .search_logo{
+    position: relative;
+    top: -9px;
+    margin-left: 200px;
+    margin-right: 20px;
+    float: left;
+    background-image: url("https://tb2.bdstatic.com/tb/static-common/img/search_logo_big_73c81f8.png");
+    background-size: cover;
+    width: 135px;
+    height: 45px;
+}
+
+.search_main{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 32px;
+}
+
+.search_form{
+    margin: auto;
+}
+
+.search_form form{
+    position: relative;
+    margin-left: 150px;
+}
+
+.search_bright .search_inp_border{
+    border: 1px solid #b8b8b8;
+    border-bottom-color: #cccccc;
+}
+
+.search_bright .search_ipt{
+    font-family: Arial;
+    height: 30px;
+    padding: 4px 10px 4px 7px;
+    line-height: normal;
+    overflow: hidden;
+    color: #53545e;
+    font-size: 16px;
+    float: left;
+    display: inline;
+}
+
+.search_bright .search_btn_enter_ba_wrap{
+    margin-left: -1px;
+}
+
+.search_bright .search_btn_wrap{
+    float: left;
+    width: 104px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 0 0 4px;
+}
+
+.j_search_post{
+    text-decoration: none !important;
+}
+
+.search_bright .search_btn:visited {
+
+}
+
+.search_bright .search_btn {
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid #38f;
+    font-size: 16px;
+    float: left;
+    display: inline;
+    width: 102px;
+    text-align: center;
+    margin-left: 0;
+    cursor: pointer;
+    font-family: Arial;
+}
+
+.search_bright .search_btn_enter_ba{
+    background-color: #38f;
+}
+
+.senior-search-link{
+    position: absolute;
+    top: 9px;
+    width: 55px;
+    color: #333333;
+    text-decoration: underline;
+    font-size: 13px;
+    font-family: Arial;
+}
+
+.search_bright .j_enter_ba{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    height: 39px;
+    line-height: 39px;
+    width: 104px;
+}
+
 #allBack {
     background-image: url(../image/backgroundImg/backgroundImg.jpg);
     height: 900px;
@@ -130,7 +289,7 @@
     flex-flow: column;
     resize: both;
     overflow: auto;
-    margin-top: 60px;
+    /*margin-top: 60px;*/
 }
 
 #mainContainer {
