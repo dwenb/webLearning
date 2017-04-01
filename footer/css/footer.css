@@ -13,8 +13,12 @@
     font-size: 12px;
 }
 
+.u_member{
+    width: 90px;
+}
+
 .u_ddl {
-    display: none;
+    display: inline-block;
     position: absolute;
     z-index: 1;
     top: 29px;
@@ -48,14 +52,16 @@
 }
 
 .u_ddl_con {
+    display: none;
     border: solid 1px #d1d1d1;
+    height: 80px;
+    width: 90px;
     background: #fff;
-    overflow: hidden;
+    /*overflow: hidden;*/
     box-shadow: 1px 1px 5px #d1d1d1;
 }
 
 .u_ddl_con li a {
-    display: block;
     line-height: 26px;
     color: #333;
     white-space: nowrap;
@@ -63,6 +69,7 @@
 
 .u_ddl_con_top li a {
     padding: 0 11px;
+    display: inline-block;
 }
 
 .u_ddl_arrow {

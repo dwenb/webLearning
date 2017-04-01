@@ -1,8 +1,6 @@
 window.onload = function () {
     //容器对象
     var mainContainer=document.getElementById("mainContainer");
-    // mainContainer.style.width = parseInt(screen.width)+"px";
-    // mainContainer.style.height = parseInt(screen.height) + "px";
     mainContainer.style.left = (document.body.clientWidth - mainContainer.clientWidth)/2 +"px";
 
     //容器对象
@@ -44,8 +42,28 @@ window.onload = function () {
     }
 
     //获取右上角user bar中会员元素
-    var getVip = document.getElementById("com_userbar");
-    console.log(getVip);
-    var getdiv = getVip.getElementsByTagName("a");
-    console.log(getdiv);
+    var userBar = document.getElementById("com_userbar");
+    var vipMemberBox = userBar.getElementsByTagName("li");
+
+    //获取会员列表选项
+    var vipList = document.getElementById("vip_list");
+    var listbox = vipList.getElementsByTagName("li");
+    vipMemberBox[5].onmouseover = function () {
+        vipList.style.display = "block";
+        vipMemberBox[5].style.height =  "110px";
+        for(var i=0; i<listbox.length; i++){
+            (function (i) {
+               listbox[i].onmouseover = function(){
+                   listbox[i].style.backgroundColor="blue";
+               }
+               listbox[i].onmouseout = function () {
+                   listbox[i].style.backgroundColor="white";
+               }
+           })(i)
+        }
+    };
+    vipMemberBox[5].onmouseout = function () {
+        vipList.style.display = "none";
+        vipMemberBox[5].style.height =  "auto";
+    }
 };
