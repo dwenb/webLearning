@@ -362,24 +362,53 @@
 /*}*/
 
 /*动画效果2*/
+/*@-webkit-keyframes anim1{*/
+    /*0% {top: 15px;opacity: 1}*/
+    /*100% {top: -105px;opacity: 1}*/
+/*}*/
+
+/*@-webkit-keyframes anim2{*/
+    /*0% {top: 45px;opacity: 1}*/
+    /*100% {top: -75px;opacity: 1}*/
+/*}*/
+
+/*@-webkit-keyframes anim3{*/
+    /*0% {top: 75px;opacity: 1}*/
+    /*100% {top: -45px;opacity: 1}*/
+/*}*/
+
+/*@-webkit-keyframes anim4{*/
+    /*0% {top: 105px;opacity: 1}*/
+    /*100% {top: -15px;opacity: 1}*/
+/*}*/
+
+/*动画效果3*/
 @-webkit-keyframes anim1{
-    0% {top: 15px;opacity: 1}
-    100% {top: -105px;opacity: 1}
+    0% {top:15px; opacity:1}
+    37.5% {top:-30px; opacity:1}
+    37.6% {top:-30px;opacity:0}
+    74.9% {top:45px;opacity:0}
+    75% {top:45px;opacity:1}
+    100% {top:15px;opacity:1}
 }
 
 @-webkit-keyframes anim2{
-    0% {top: 45px;opacity: 1}
-    100% {top: -75px;opacity: 1}
+    0%{top:45px;opacity:1}
+    100%{top:-75px;opacity:1}
 }
 
 @-webkit-keyframes anim3{
-    0% {top: 75px;opacity: 1}
-    100% {top: -45px;opacity: 1}
+    0%{top:75px;opacity:1}
+    100%{top:-45px;opacity:1}
 }
 
 @-webkit-keyframes anim4{
-    0% {top: 105px;opacity: 1}
-    100% {top: -15px;opacity: 1}
+    0%{top:-15px;opacity:1}
+    25%{top:-45px;opacity:1}
+    25.9%{top:-45px;opacity:0}
+    62.4%{top:30px;opacity:0}
+    62.5%{top:30px;opacity:1}
+    100%{top:-15px;opacity:1}
 }
 
 #rollText{
