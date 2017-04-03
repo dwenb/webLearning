@@ -321,14 +321,80 @@
 
 #triangle {
     position: absolute;
-    margin-left: 100px;
+    left: 50px;
     width: 0px;
     display: block;
     margin-top: 300px;
-    border-left: 500px solid yellow;
+    border-left: 300px solid yellow;
     border-bottom: 100px solid white;
     border-top: 100px solid black;
     overflow: hidden;
+}
+
+/*动画效果*/
+@-webkit-keyframes anim1{
+     0% {top: 30px;opacity: 1}
+     25% {top: -30px;opacity: 1}
+     50% {top: -30px;opacity: 0}
+     100%{top:30px;opacity: 0}
+ }
+
+@-webkit-keyframes anim2{
+    0% {top: 30px;opacity: 0}
+    25% {top: 30px;opacity: 1}
+    50% {top: -30px;opacity: 1}
+    100%{top: -30px;opacity: 0}
+}
+
+@-webkit-keyframes anim3{
+    0% {top: -30px;opacity: 0}
+    25% {top: 30px;opacity: 0}
+    50% {top: 30px;opacity: 1}
+    75% {top: -30px;opacity: 1}
+    100%{top:-30px;opacity: 0}
+}
+
+@-webkit-keyframes anim4{
+    0% {top: -30px;opacity: 0}
+    50% {top: 30px;opacity: 0}
+    75% {top: 30px;opacity: 1}
+    100%{top: -30px;opacity: 1}
+}
+
+#rollText{
+    position: absolute;
+    width: 400px;
+    border: 1px solid #333333;
+    margin-top: 300px;
+    height: 30px;
+    top:30px;
+    right: 50px;
+    overflow: hidden;
+}
+
+#rollText p{
+    height: 30px;
+    position: absolute;
+}
+
+#rollText p:nth-child(1){
+    background-color: #3388ff;
+    -webkit-animation: anim1 4s linear infinite;
+}
+
+#rollText p:nth-child(2){
+    background-color: aquamarine;
+    -webkit-animation: anim2 4s linear infinite;
+}
+
+#rollText p:nth-child(3){
+    background-color: #333333;
+    -webkit-animation: anim3 4s linear infinite;
+}
+
+#rollText p:nth-child(4){
+    background-color: blueviolet;
+    -webkit-animation: anim4 4s linear infinite;
 }
 
 #boxContainer {
